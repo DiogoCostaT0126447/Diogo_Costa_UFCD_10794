@@ -238,6 +238,7 @@ print("Nomes inseridos:", nomes)
 
 #crie um programa que peça ao utilizador nomes ate ser inserido "0"
 #e mostre a lista dos nomes pedidos, deve mostrar um nome por linha
+"""
 nomes = []
 while True:
     nome = input("Digite um nome (ou 0 para sair): ")
@@ -249,4 +250,62 @@ for nome in nomes:
     
 print("--------------------------------")
 
+"""
 
+for elm in lst.__reversed__():
+    print(elm)
+    
+# dict
+
+aluno = {
+    "nome": "Diogo",
+    "media": 18,
+    "estado": "aprovado"}
+
+print(aluno)
+
+aluno["escola"] = "ATEC"
+
+print(aluno)
+
+aluno["escola"] = "IEFP"
+
+print(aluno)
+
+aluno.pop("escola")
+
+print(aluno)
+
+aluno.popitem()
+print(aluno)
+
+for keys in aluno():
+    print(keys)
+print("--------------------------------")
+for values in aluno.keys():
+    print(values)    
+print("--------------------------------")
+for keys, values in aluno.items():
+    print(f"{keys: 10} : {values}")
+    
+    
+def nome():
+    print("antes")
+    pass
+    print("depois")
+    
+def soma(val1, val2):
+    return val1 + val2
+
+res = soma(12, 12)
+
+print(res)
+
+def soma2(val1: int, val2: int) -> int:
+    return val1 + val2
+
+res2 = soma2(125, 15)
+print(res)
+
+def demo(num1: int, num2):
+    pass
