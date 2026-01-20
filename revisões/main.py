@@ -15,7 +15,7 @@ funções
 
 """
 
-
+"""
 #crie uma variável com um nome e mostre esse nome na consola
 
 nome = "Diogo"
@@ -145,24 +145,108 @@ print("--------------------------------")
 
 #Faça uma app que mostre o resultado da tabuada
 #deve pedir o num da tabuada
-#adapte o codigo para pedir sempre uma opção até que o usuario queira sair(valor 0)
+
 
 
 while True:
-    num = int(input("Escreve o numero da tabuada (1-10) ou 0 para sair: "))
-
-    if num == 0:
-        print("Programa terminado.")
+    print("--- Tabuada ---")
+    print("Escolha uma opção:")
+    print("1 - Mostrar tabuada")
+    print("0 - Sair")
+    escolha = input("Opção: ")
+    
+    if escolha == "0":
         break
-    elif num < 1 or num > 10:
-        print("Numero invalido\n")
-    else:
+    elif escolha == "1":
+        num = int(input("Insira o numero da tabuada: "))
         for i in range(1, 11):
-            resultado = num * i
-            print(f"{num} x {i} = {resultado}")
-        
+            print(f"{num} x {i} = {num * i}")
+    else:
+        print("Opção invalida")
         
     print("--------------------------------")
 
 
+
+#adapte o codigo para pedir sempre uma opção até que o usuario queira sair(valor 0)
+
+
+while True:
+    print("Menu:")
+    print("1 - Olá Mundo")
+    print("2 - Bom dia")
+    print("3 - Boa noite")
+    print("0 - Sair")
+
+    escolha = int(input("Escolha uma opção: "))
+
+    match escolha : 
+        case 1:
+            print("Olá Mundo")
+        case 2:
+            print("Bom dia")
+        case 3:
+            print("Boa noite")
+        case 0:
+            print("Saindo do programa.")
+            break
+        case default:
+            print("Opção inválida")
+            
+print("--------------------------------")
+
+
+
+"""
+
+
+lst = ["elm1", "elm2", "elm3"]
+print(lst)
+lst.append("elm4")
+print(lst)
+lst.append(30)
+print(lst)
+lst.remove("elm4")
+lst.pop(0)
+print(lst)
+
+cnt = lst.count("elm1")
+print(cnt)
+
+print(len(lst))
+print(lst.__len__())
+
+nome = "Joao"
+
+print(nome.__len__())
+
+"""
+lst:
+    add
+    remover
+    contar 
     
+"""
+# crie um programa que peça 5 nomes; mostre a lista dos nomes pedidos
+"""
+nomes = []
+for i in range(5):
+    nome = input("Insira um nome: ")
+    nomes.append(nome)
+print("Nomes inseridos:", nomes)
+"""
+
+#crie um programa que peça ao utilizador nomes ate ser inserido "0"
+#e mostre a lista dos nomes pedidos, deve mostrar um nome por linha
+nomes = []
+while True:
+    nome = input("Digite um nome (ou 0 para sair): ")
+    if nome == "0":
+        break
+    nomes.append(nome)
+for nome in nomes:
+    print(nome)
+    
+print("--------------------------------")
+
+
