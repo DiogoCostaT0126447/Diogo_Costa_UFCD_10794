@@ -14,3 +14,10 @@ funções
 
 
 """
+
+
+#crie uma variável com um nome e mostre esse nome na consola
+
+nome = "Diogo"
+
+print(nome)
