@@ -21,3 +21,9 @@ funções
 nome = "Diogo"
 
 print(nome)
+
+#Mostre a msg "Ola <nome>", utilize 3 opcoes para mostrar a msg
+
+print("Olá", nome)
+print(f"Olá {nome}")
+print("Olá " + nome)
